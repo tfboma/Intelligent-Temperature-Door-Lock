@@ -32,5 +32,22 @@
         </div>
 
     </div>
+    <script>
+        function check()
+        {
+           if(document.getElementById("pwd1").value!=document.getElementById("pwd2").value)
+           {
+               document.getElementById("warning").innerHTML="Passwords are different! ";
+               warning.style.display='block';
+           }
+
+           else
+           {
+               warning.style.display = 'none';
+               //document.getElementById("warning").innerHTML= " ";
+
+           }
+        }
+    </script>
 </body>
 </html>
