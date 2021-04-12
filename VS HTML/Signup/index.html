@@ -57,11 +57,15 @@
                 Password2 = document.getElementById("pwd2").value,
                 Data = "Username" + Username + "&" + "Password" + Password1;
             
+		if(!(check())
+		   {
+		   return;
+		   }
+		   
             var Request = new XMLHttpRequest();
             
             Request.open("GET","signup.php?"+ Data);
             Request.send();
-            check();
         }
 
 
@@ -74,12 +78,14 @@
            {
                document.getElementById("warning").innerHTML="Passwords are different! ";
                warning.style.display='block';
+		   return false;
            }
 
            else
            {
                warning.style.display = 'none';
                //document.getElementById("warning").innerHTML= " ";
+		   return true;
 
            }
         }
