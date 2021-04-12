@@ -11,7 +11,7 @@ $result = mysql_frech_array($check);
 
 if($result)
 {
-    echo 'success! Click to jump <a href ="file:///F:/VS%20HTML/Main/main.html">Main</a>';
+    echo 'success! Click to jump <a href ="file:///F:/VS%20HTML/Main/main.html?username=$Username">Main</a>';
 }
 else
 {
