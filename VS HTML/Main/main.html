@@ -31,15 +31,18 @@
     </div>
 
     <script>
+        Infor();
         function Infor()
         {
-            var Username = document.getElementById("username").value;
+            /*var Username = document.getElementById("username").value;
             var Showinfor = new XMLHttpRequest();
 
             Showinfor.onload() = function
             {
                 document.getElementById("name").innerHTML = Showinfor.responseText;
-            }
+            }*/
+            var params = location.search.replace("?","").split("=');
+            document.getElementById("name").value = params[1];
         }
     </script>
 </body>
