@@ -1,5 +1,5 @@
 <?php
-$con = mysql_connect("localhost","root","130806","door_lock_system");
+$con = mysql_connect("192.168.31.70","root","","door_lock_system");
 if(!$con)
 {
     die('database connection failed'.mysql_error());
