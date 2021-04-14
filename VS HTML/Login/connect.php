@@ -1,5 +1,5 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','130806','door_lock_system');
+$conn = mysqli_connect('192.168.31.70','root','','door_lock_system');
 
 ?>
