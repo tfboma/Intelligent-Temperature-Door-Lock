@@ -1,5 +1,5 @@
 <?php
-$con= mysql_connect("localhost","root","130806");
+$con= mysql_connect("192.168.31.70","root","");
 if(!$con)
 {
     die('database connection failed'.mysql_error());
